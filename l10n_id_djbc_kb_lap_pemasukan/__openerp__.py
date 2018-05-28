@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2017 OpenSynergy Indonesia
+# Copyright 2018 OpenSynergy Indonesia
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "Indonesia - Lap.  Pemasukan for DJBC's Kawasan Berikat Reporting",
@@ -11,6 +11,8 @@
     "installable": True,
     "depends": [
         "l10n_id_djbc_kb_lap_common",
+        "report_aeroo",
+        "purchase"
     ],
     "data": [
         "wizards/date_range_selector_views.xml",
