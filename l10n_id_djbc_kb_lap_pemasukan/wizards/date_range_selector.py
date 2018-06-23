@@ -3,12 +3,12 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from openerp import api, models, _
-from openerp.exceptions import except_orm
+from openerp.exceptions import Warning as UserError
 
 
 class KBLapPemasukanWizard(models.TransientModel):
     _name = "l10n_id.kb_lap_pemasukan_wizard"
-    _inherit = "l10n_id.date_range_selector"
+    _inherit = ["l10n_id.date_range_selector"]
 
     @api.multi
     def action_print_sreen(self):

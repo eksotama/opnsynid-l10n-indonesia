@@ -79,10 +79,12 @@ class DateRangeSelector(models.AbstractModel):
         self.ensure_one()
 
         if self.output_format == "screen":
-            self.action_print_sreen()
+            result = self.action_print_sreen()
         elif self.output_format == "ods":
-            self.action_print_ods()
+            result = self.action_print_ods()
         elif self.output_format == "xls":
-            self.action_print_xls()
+            result = self.action_print_xls()
         else:
             raise UserError("No Output Format Selected")
+
+        return result
